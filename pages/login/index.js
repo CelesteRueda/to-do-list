@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import Link from "next/link";
 import React, { useState } from "react";
 import style from "../../styles/login.module.css";
 
@@ -22,7 +23,7 @@ const Login = () => {
                   size="large"
                   variant="contained"
                 >
-                  <a href="/api/auth/login">iniciar sesión</a>
+                  <Link href="/api/auth/login">iniciar sesión</Link>
                 </Button>
               </div>
             </form>

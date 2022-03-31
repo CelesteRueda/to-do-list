@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -27,7 +28,7 @@ const NavBar = () => {
             To Do List
           </Typography>
           <Button color="inherit">
-            <a href="/api/auth/logout">Cerrar sesión</a>
+            <Link href="/api/auth/login">Cerrar sesión</Link>
           </Button>
         </Toolbar>
       </AppBar>
