@@ -13,7 +13,7 @@ import Link from "next/link";
 const NavBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: "#c6a06d" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -28,7 +28,7 @@ const NavBar = () => {
             To Do List
           </Typography>
           <Button color="inherit">
-            <Link href="/api/auth/login">Cerrar sesión</Link>
+            <Link href="/api/auth/logout">log out</Link>
           </Button>
         </Toolbar>
       </AppBar>
